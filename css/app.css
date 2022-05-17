@@ -66,7 +66,7 @@ img {
 }
 .contenedor-nav img {
   width: 252px;
-  height: 67px;
+  height: 90px;
 }
 
 .divItbank {
@@ -84,6 +84,10 @@ img {
   padding: 5px 5px;
   border-radius: 5px;
   color: #fff;
+}
+
+.hambur {
+  cursor: pointer;
 }
 
 .popUp-container {
@@ -242,7 +246,9 @@ img {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 90px 0;
+  flex-wrap: wrap;
+  max-width: 95%;
+  margin: 90px auto;
 }
 
 .icono {
@@ -259,6 +265,37 @@ img {
   font-size: 16px;
   font-weight: 700;
   margin: 0;
+}
+
+@media (max-width: 768px) {
+  .footer :nth-child(2) {
+    gap: 0;
+  }
+
+  .icono {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    margin-bottom: 2rem;
+  }
+
+  .icono:last-child {
+    margin: 0;
+  }
+}
+.lateralInfo {
+  background-color: #fff;
+  position: fixed;
+  width: 350px;
+  height: 100%;
+  top: 0;
+  left: -350px;
+  transition: all 500ms linear;
+}
+
+.activo {
+  left: 0;
+  top: 0;
 }
 
 /*# sourceMappingURL=app.css.map */

@@ -1,0 +1,15 @@
+.lateralInfo{
+    background-color: #fff;
+    position: fixed;
+    width: 350px;
+    height: 100%;
+    top: 0;
+    left: -350px;
+    transition: all 500ms linear;
+    
+}
+
+.activo{
+    left: 0;
+    top: 0;
+}
