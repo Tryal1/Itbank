@@ -1,0 +1,190 @@
+body {
+  font-family: "Roboto Mono", monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.centrar {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0 0 5rem 0;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.header {
+  padding: 15px 10px;
+  background: linear-gradient(180deg, rgba(169, 169, 169, 0) 0%, rgb(158, 163, 189) 100%);
+}
+
+.contenedor-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.contenedor-nav img {
+  width: 252px;
+  height: 67px;
+}
+
+.divItbank {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navBar {
+  display: flex;
+  gap: 2rem;
+}
+.navBar a {
+  background: radial-gradient(circle, rgb(41, 90, 132) 0%, rgb(161, 160, 160) 100%);
+  padding: 5px 5px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.popUp-container {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popUp {
+  position: relative;
+  width: 25%;
+  /* width: 480px; */
+  width: 400px;
+  height: 55%;
+  background-color: #fff;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: all 0.3s linear;
+}
+
+.popUp-close {
+  transform: perspective(50px) translateZ(-100px);
+  opacity: 0.3;
+}
+
+.close {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  text-align: center;
+  width: 25px;
+  height: 25px;
+  color: #fff;
+  line-height: 25px;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: rgb(230, 16, 16);
+}
+
+/* Formulario */
+.formulario {
+  width: 90%;
+  padding: 30px 0;
+  margin: auto;
+  text-align: center;
+}
+
+.formulario legend {
+  text-align: center;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.formulario p {
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.campo {
+  margin-bottom: 25px;
+}
+
+.imput-text {
+  width: 90%;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid rgb(150, 150, 150);
+  padding: 15px;
+}
+
+.enviar {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.btn {
+  border-radius: 6px;
+  padding: 11px;
+  width: 110px;
+  border: none;
+  background-color: rgb(255, 181, 43);
+  cursor: pointer;
+}
+
+.carusel-info {
+  text-align: start;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  top: 0;
+}
+.carusel-info div {
+  border-radius: 10px;
+  padding: 15px;
+}
+.carusel-info .fondo-azul {
+  background: linear-gradient(0deg, rgba(196, 196, 196, 0.3) 0%, rgb(41, 90, 132) 100%);
+}
+.carusel-info .fondo-dorado {
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.4) 0%, rgba(72, 52, 0, 0.4) 100%);
+}
+.carusel-info h3 {
+  margin: 0;
+}
+
+/*# sourceMappingURL=app.css.map */

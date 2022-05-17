@@ -1,0 +1,21 @@
+
+.carusel-info{
+    text-align: start;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    div{
+        border-radius: 10px;
+        padding: 15px;
+    }
+    .fondo-azul{
+        background: linear-gradient(0deg, rgba(196,196,196,0.3) 0%, rgba(41,90,132,1) 100%);
+    }
+    .fondo-dorado{
+        background: radial-gradient(circle, rgba(255,255,255,0.4) 0%, rgba(72,52,0,0.4) 100%);
+    }
+    h3{
+        margin: 0;
+    }
+}
