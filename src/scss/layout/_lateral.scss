@@ -1,15 +1,38 @@
-.lateralInfo{
-    background-color: #fff;
-    position: fixed;
-    width: 350px;
-    height: 100%;
-    top: 0;
-    left: -350px;
-    transition: all 500ms linear;
-    
+.lateralInfo {
+  background-color: #fff;
+  position: fixed;
+  width: 350px;
+  height: 100%;
+  top: 0;
+  left: -350px;
+  transition: all 500ms linear;
 }
 
-.activo{
-    left: 0;
-    top: 0;
+.activo {
+  left: 0;
+  top: 0;
+}
+
+.desactivar{
+  width: 42px;
+  height: 42px;
+  position: absolute;
+  top: 20px;
+  left: 5px;
+  margin-top: -19px;
+  color: #545454;
+  font-size: 27px;
+  line-height: 42px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.acordionUl{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.accordion{
+  margin-top: 50px;
 }

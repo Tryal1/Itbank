@@ -1,40 +1,39 @@
-
-.footer{
- display: flex;
- justify-content: space-around;
- align-items: center;
- flex-wrap: wrap;
- max-width: 95%;
- margin: 90px auto;
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 95%;
+  margin: 90px auto;
 }
 
-.icono{
-    display: flex;
-    align-items: center;
-    gap:  2rem;
-    img{
-        width: 70px;
-        height: 70px;
-    }
+.icono {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  img {
+    width: 70px;
+    height: 70px;
+  }
 }
 
-.telefono-contacto *{
-    font-size: 16px;
-    font-weight: 700;
-    margin: 0;
+.telefono-contacto * {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0;
 }
 
-@media(max-width: 768px){
-  .footer :nth-child(2){
+@media (max-width: 768px) {
+  .footer :nth-child(2) {
     gap: 0;
   }
-  .icono{
-      display: grid;
-      grid-template-columns: repeat(2,1fr);
-      justify-items: center;
-      margin-bottom: 2rem;
+  .icono {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    margin-bottom: 2rem;
   }
-  .icono:last-child{
-      margin: 0;
+  .icono:last-child {
+    margin: 0;
   }
 }
