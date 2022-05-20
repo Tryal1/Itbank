@@ -6,6 +6,7 @@
   top: 0;
   left: -350px;
   transition: all 500ms linear;
+  z-index: 1000;
 }
 
 .activo {
@@ -13,7 +14,7 @@
   top: 0;
 }
 
-.desactivar{
+.desactivar {
   width: 42px;
   height: 42px;
   position: absolute;
@@ -25,14 +26,22 @@
   line-height: 42px;
   cursor: pointer;
   z-index: 1000;
+  
 }
 
-.acordionUl{
+.acordionUl {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.accordion{
+.accordion {
   margin-top: 50px;
+}
+
+//ACORDION
+
+.accordion-body {
+  display: flex;
+  flex-direction: column;
 }
