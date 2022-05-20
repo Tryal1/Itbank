@@ -1,6 +1,5 @@
 body {
   font-family: "Roboto Mono", monospace;
-  background: linear-gradient(180deg, rgba(169, 169, 169, 0) 0%, rgb(158, 163, 189) 100%);
 }
 
 * {
@@ -56,13 +55,15 @@ img {
 
 .header {
   padding: 15px 10px;
-  background: linear-gradient(180deg, rgba(169, 169, 169, 0) 0%, rgb(158, 163, 189) 100%);
+  background: linear-gradient(270.01deg, rgba(174, 166, 255, 0.85963) 8.27%, #F2E1FF 45.42%, rgba(255, 249, 219, 0) 82.18%);
 }
 
 .contenedor-nav {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 .contenedor-nav img {
   width: 252px;
@@ -80,10 +81,10 @@ img {
   gap: 2rem;
 }
 .navBar a {
-  background: radial-gradient(circle, rgb(41, 90, 132) 0%, rgb(161, 160, 160) 100%);
   padding: 5px 5px;
-  border-radius: 5px;
-  color: #fff;
+  border-radius: 100px;
+  background: #FFFFFF;
+  box-shadow: -1px 5px 8px 0px rgba(68, 72, 81, 0.3490196078);
 }
 
 .hambur {
@@ -119,7 +120,6 @@ img {
 
 .popUp-close {
   transform: perspective(50px) translateZ(-100px);
-  opacity: 0.3;
 }
 
 .close {
@@ -210,8 +210,8 @@ img {
   justify-content: space-evenly;
   align-items: center;
   gap: 2rem;
-  width: 95%;
-  margin: 35px auto;
+  background: #E5E5E5;
+  padding: 30px 0;
 }
 
 .tarjetas {
@@ -243,12 +243,11 @@ img {
 }
 
 .footer {
+  background: linear-gradient(180deg, #F0F0F0 -1.51%, #CCCBF0 31.2%, #7876F0 124.98%);
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  max-width: 95%;
-  margin: 90px auto;
 }
 
 .icono {
@@ -257,8 +256,13 @@ img {
   gap: 2rem;
 }
 .icono img {
-  width: 70px;
-  height: 70px;
+  width: 40.27px;
+  height: 39px;
+}
+
+.itba-img {
+  width: 292px;
+  height: 126px;
 }
 
 .telefono-contacto * {
@@ -291,6 +295,7 @@ img {
   top: 0;
   left: -350px;
   transition: all 500ms linear;
+  z-index: 1000;
 }
 
 .activo {
@@ -320,6 +325,11 @@ img {
 
 .accordion {
   margin-top: 50px;
+}
+
+.accordion-body {
+  display: flex;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=app.css.map */

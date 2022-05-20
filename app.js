@@ -3,7 +3,6 @@ var open = document.querySelector(".open");
 var popUp = document.querySelector(".popUp");
 var popUpContainer = document.querySelector(".popUp-container");
 var lateralInfo = document.querySelector(".lateralInfo");
-
 var activeLateral = document.querySelector(".hambur");
 var desactivarLateral = document.querySelector(".desactivar");
 
