@@ -1,4 +1,4 @@
-    .popUp-container {
+.popUp-container {
   opacity: 0;
   visibility: hidden;
   position: fixed;
@@ -27,7 +27,6 @@
 
 .popUp-close {
   transform: perspective(50px) translateZ(-100px);
-  
 }
 
 .close {

@@ -16,8 +16,8 @@
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../css/app.css" />
-    <title>Tarjetas de Crédito</title>
+    <link rel="stylesheet" href="../css/app.css" type="text/css" />
+    <title>Préstamos</title>
   </head>
   <body>
     <header class="header">
@@ -49,62 +49,58 @@
       </div>
     </header>
 
-    <main>
-      <div class="imgPrincipal">
-        <img src="../src/image/tarjeta-fondo.png" alt="" />
-      </div>
-    </main>
+    <!-- main -->
 
-    <section class="fondo-tarjetas">
-      <h1 class="titulo-tarjeta">ELEGÍ LA TUYA Y CONOCÉ LOS BENEFICIOS</h1>
-      <div class="container-tipoTarje">
-        <!-- Inicio tarjeta -->
-        <div class="tarjeta">
-          <h3>ITBANK PLUS+</h3>
-          <ul>
-            <li>Débito y Crédito</li>
-            <li>Servicio de Cuenta</li>
-            <li>Super Préstamos</li>
-          </ul>
-          <button class="btn-click">Click Acá</button>
-          <img
-            class="imgPosition"
-            src="../src/image/tarjeta-azul.png"
-            alt="Tarjeta azul"
-          />
-        </div>
-        <!-- Inicio tarjeta -->
-        <div class="tarjeta gold">
-          <h3>ITBANK PLUS+</h3>
-          <ul>
-            <li>Débito y Crédito</li>
-            <li>Servicio de Cuenta</li>
-            <li>Super Préstamos</li>
-          </ul>
-          <button class="btn-click">Click Acá</button>
-          <img
-            class="imgPosition"
-            src="../src/image/tarjeta-gold.png"
-            alt="Tarjeta gold"
-          />
-        </div>
-        <!-- Inicio tarjeta -->
-        <div class="tarjeta black">
-          <h3>ITBANK PLUS+</h3>
-          <ul>
-            <li>Débito y Crédito</li>
-            <li>Servicio de Cuenta</li>
-            <li>Super Préstamos</li>
-          </ul>
-          <button class="btn-click">Click Acá</button>
-          <img
-            class="imgPosition"
-            src="../src/image/tarjeta-Black.png"
-            alt="Tarjeta black"
-          />
+    <section class="container-prestamosMain">
+      <div class="prestamosMain">
+        <div>
+          <h1>Accedé al préstamo que mejor se adapte para vos</h1>
         </div>
       </div>
     </section>
+
+    <main class="prestamos">
+      <div class="prestamos-particular">
+        <img src="../src/image/personal.jpg" alt="" />
+        <div class="descripcionPrestamos">
+          <h3>Préstamo Personal</h3>
+          <ul>
+            <li>Tasa Fija</li>
+            <li>Hasta $3.000.000</li>
+            <li>Plazo hasta 60 meses</li>
+            <li>En pesos</li>
+          </ul>
+          <a href="">Conoce más</a>
+        </div>
+      </div>
+
+      <div class="prestamos-particular">
+        <img src="../src/image/auto.jpg" alt="" />
+        <div class="descripcionPrestamos">
+          <h3>Préstamo Para comprar tu auto</h3>
+          <ul>
+            <li>Tasa Fija</li>
+            <li>Autos nuevos y usados</li>
+            <li>Plazo hasta 60 meses</li>
+            <li>Hasta 80% del valor del auto</li>
+          </ul>
+          <a href="">Conoce más</a>
+        </div>
+      </div>
+
+      <div class="prestamos-particular">
+        <img src="../src/image/casa.jpg" alt="" />
+        <div class="descripcionPrestamos">
+          <h3>Préstamos Hipotecario</h3>
+          <ul>
+            <li>Tasa Fija</li>
+            <li>Plazo hasta 120 meses</li>
+            <li>Hasta 70% del valor</li>
+          </ul>
+          <a href="">Conoce más</a>
+        </div>
+      </div>
+    </main>
 
     <!-- Footer -->
 
@@ -156,7 +152,18 @@
 
     <!-- Lateral Info -->
     <div class="lateralInfo">
-      <p class="desactivar">X</p>
+      <p class="desactivar">
+        <svg
+          width="10"
+          className=""
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 320 512"
+        >
+          <path
+            d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"
+          />
+        </svg>
+      </p>
       <div class="accordion accordion-flush" id="accordionFlushExample">
         <div class="accordion-item">
           <h2 class="accordion-header" id="flush-headingOne">
@@ -221,8 +228,8 @@
                     data-bs-parent="#accordionPersona"
                   >
                     <div class="accordion-body">
-                      <a href="tarjetas.html">Tarjeta de Crédito</a>
-                      <a href="tarjetas.html">Tarjeta de Debito</a>
+                      <a href="./tarjetas.html">Tarjeta de Crédito</a>
+                      <a href="">Tarjeta de Debito</a>
                     </div>
                   </div>
                 </li>
@@ -246,7 +253,7 @@
                     data-bs-parent="#accordionPersona"
                   >
                     <div class="accordion-body">
-                      <a href="./prestamos.html">Préstamos en efectivo</a>
+                      <a href="">Préstamos en efectivo</a>
                     </div>
                   </div>
                 </li>
