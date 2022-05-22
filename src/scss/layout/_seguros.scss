@@ -1,93 +1,90 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .container-fotosSeguros {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2rem;
+  padding: 30px 0;
+  font-family: "Montserrat", sans-serif;
+
+  .foto {
+    width: 500px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    gap: 2rem;
-    padding: 30px 0;
-    font-family: 'Montserrat', sans-serif;
-
-
-    .foto {
-        width: 500px;
-        cursor: pointer;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-
-    }
-    figure {
-        position: relative;
-        overflow: hidden;
-        width: 500px;
-        border-radius: 6px;
-        box-shadow: 0px 15px 20px rgba (0, 0 , 0 , 0.5);
-        cursor: pointer;
-    }
-    img {
-        width: 100%;
-        height: 100%;
-        transition: all 500ms ease-out;
-    }
-    .tituloFoto{
-        position: absolute;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background: #929292;
-        transition: all 500ms ease-out;
-        opacity: 0;
-        visibility: hidden;
-        text-align: center;
-    }
-    figure:hover > .tituloFoto {
-        opacity: 0.9;
-        visibility: visible;
-    }
-    figure:hover > .tituloFoto h3{
-        margin-top: 70px;
-        margin-bottom: 15px;
-    }
-    figure .tituloFoto h3{
-        color: white;
-        font-weight: 400px;
-        margin-bottom: 120px;
-        transition: all 500ms ease-out;
-        margin-top: 30px;
-    }
-    figure .tituloFoto p {
-        color: white;
-        font-size: 15px;
-        line-height: 1.5;
-        width: 100%;
-        max-width: 220px;
-        margin: auto;
-    }
-
+    height: 100vh;
+  }
+  figure {
+    position: relative;
+    overflow: hidden;
+    width: 500px;
+    border-radius: 6px;
+    box-shadow: 0px 15px 20px rgba (0, 0, 0, 0.5);
+    cursor: pointer;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+  }
+  .tituloFoto {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #929292;
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+  }
+  figure:hover > .tituloFoto {
+    opacity: 0.9;
+    visibility: visible;
+  }
+  figure:hover > .tituloFoto h3 {
+    margin-top: 70px;
+    margin-bottom: 15px;
+  }
+  figure .tituloFoto h3 {
+    color: white;
+    font-weight: 400px;
+    margin-bottom: 120px;
+    transition: all 500ms ease-out;
+    margin-top: 30px;
+  }
+  figure .tituloFoto p {
+    color: white;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+    margin: auto;
+  }
 }
 
 .titulos-fotos {
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 59px;
-    text-align: center;
-    margin-top: 50px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 59px;
+  text-align: center;
+  margin-top: 50px;
 
-    .titulo_Seguros {
-        margin-bottom: 20px;
-    }
+  .titulo_Seguros {
+    margin-bottom: 20px;
+  }
 
-    .titulo_subtituloSeguro {
-        margin-bottom: 20px;
-    }
+  .titulo_subtituloSeguro {
+    margin-bottom: 20px;
+  }
 }
