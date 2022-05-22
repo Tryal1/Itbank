@@ -1,5 +1,10 @@
 .footer {
-  background: linear-gradient(180deg, #F0F0F0 -1.51%, #CCCBF0 31.2%, #7876F0 124.98%);
+  background: linear-gradient(
+    180deg,
+    #f0f0f0 -1.51%,
+    #cccbf0 31.2%,
+    #7876f0 124.98%
+  );
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -16,28 +21,14 @@
   }
 }
 
-.itba-img{
+.itba-img {
   width: 292px;
-height: 126px;
-}
-
-.telefono-contacto * {
-  font-size: 16px;
-  font-weight: 700;
-  margin: 0;
+  height: 126px;
 }
 
 @media (max-width: 768px) {
-  .footer :nth-child(2) {
-    gap: 0;
-  }
-  .icono {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
-    margin-bottom: 2rem;
-  }
-  .icono:last-child {
-    margin: 0;
+  .footer {
+    display: flex;
+    flex-direction: column;
   }
 }

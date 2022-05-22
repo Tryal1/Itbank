@@ -16,12 +16,10 @@
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./css/app.css" />
-    <title>ITBANK</title>
+    <link rel="stylesheet" href="../css/app.css" type="text/css" />
+    <title>Préstamos</title>
   </head>
-
   <body>
-    <!---- Barra de navegacion ---->
     <header class="header">
       <div class="contenedor-nav">
         <div class="divItbank">
@@ -42,7 +40,7 @@
             <line x1="4" y1="12" x2="20" y2="12" />
             <line x1="4" y1="18" x2="20" y2="18" />
           </svg>
-          <a href="/"><img src="./src/image/itbank.png" alt="" /></a>
+          <a href="/"><img src="../src/image/itbank.png" alt="" /></a>
         </div>
         <nav class="navBar">
           <a href="#" class="open">Hacete Cliente</a>
@@ -51,134 +49,70 @@
       </div>
     </header>
 
-    <!--- Slider --->
-    <div
-      id="carouselExampleIndicators"
-      class="carousel slide"
-      data-bs-ride="true"
-    >
-      <div class="carousel-indicators">
-        <button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="0"
-          class="active"
-          aria-current="true"
-          aria-label="Slide 1"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="1"
-          aria-label="Slide 2"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="2"
-          aria-label="Slide 3"
-        ></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img
-            src="./src/image/slide1.png"
-            class="d-block w-100"
-            alt="Imagen slider 1"
-          />
-          <div class="carousel-caption carusel-info">
-            <div class="fondo-azul">
-              <h3>
-                ITBANK <br />
-                EN TUS MANOS
-              </h3>
-            </div>
-            <div>
-              <div class="fondo-azul">
-                <h3>ABRÍ TU CUENTA<br />100% GRATAS<br />100% ONLINE</h3>
-              </div>
-              <br />
-              <div class="fondo-dorado">
-                <ul>
-                  <li>DESCUENTOS EXCLUSIVOS</li>
-                  <li>FINANCIOACIONES</li>
-                  <li>ONLINE BANKING</li>
-                </ul>
-              </div>
-            </div>
-          </div>
+    <!-- main -->
+
+    <section class="container-prestamosMain">
+      <div class="prestamosMain">
+        <div>
+          <h1>Accedé al préstamo que mejor se adapte para vos</h1>
         </div>
-        <div class="carousel-item">
-          <img
-            src="./src/image/slide1.png"
-            class="d-block w-100"
-            alt="Imagen slider 2"
-          />
-        </div>
-        <div class="carousel-item">
-          <img
-            src="./src/image/slide1.png"
-            class="d-block w-100"
-            alt="Imagen slider 3"
-          />
-        </div>
-      </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-
-    <!-- Tarjetas  -->
-
-    <section class="section-tarjetas">
-      <div class="tarjetas">
-        <h3>ITBANK SUELDO</h3>
-        <p>Si cobrás tu sueldo en ITBANK</p>
-        <p>Descubri los feneficios</p>
-        <a class="btn-tarjeta" href="#">Conoce más</a>
-      </div>
-
-      <div class="tarjetas">
-        <h3 class="gold">ITBANK GOLD</h3>
-        <p>Con tu suscripción anual te lo otorgamos de por vida</p>
-        <p>Descubri los feneficios</p>
-        <a class="btn-tarjeta gold" href="#">Acceder</a>
-      </div>
-
-      <div class="tarjetas">
-        <h3 class="black">ITBANK BLACK</h3>
-        <p>Beneficios exclusivos para clientes con antiguedad de +10 años</p>
-        <p>Descubri los feneficios</p>
-        <a class="btn-tarjeta" href="#">Acceder</a>
       </div>
     </section>
+
+    <main class="prestamos">
+      <div class="prestamos-particular">
+        <img src="../src/image/personal.jpg" alt="" />
+        <div class="descripcionPrestamos">
+          <h3>Préstamo Personal</h3>
+          <ul>
+            <li>Tasa Fija</li>
+            <li>Hasta $3.000.000</li>
+            <li>Plazo hasta 60 meses</li>
+            <li>En pesos</li>
+          </ul>
+          <a href="">Conoce más</a>
+        </div>
+      </div>
+
+      <div class="prestamos-particular">
+        <img src="../src/image/auto.jpg" alt="" />
+        <div class="descripcionPrestamos">
+          <h3>Préstamo Para comprar tu auto</h3>
+          <ul>
+            <li>Tasa Fija</li>
+            <li>Autos nuevos y usados</li>
+            <li>Plazo hasta 60 meses</li>
+            <li>Hasta 80% del valor del auto</li>
+          </ul>
+          <a href="">Conoce más</a>
+        </div>
+      </div>
+
+      <div class="prestamos-particular">
+        <img src="../src/image/casa.jpg" alt="" />
+        <div class="descripcionPrestamos">
+          <h3>Préstamos Hipotecario</h3>
+          <ul>
+            <li>Tasa Fija</li>
+            <li>Plazo hasta 120 meses</li>
+            <li>Hasta 70% del valor</li>
+          </ul>
+          <a href="">Conoce más</a>
+        </div>
+      </div>
+    </main>
 
     <!-- Footer -->
 
     <footer class="footer">
       <div class="icono">
-        <a href="#"><img src="./src/image/instagram.png" alt="instagram" /></a>
-        <a href="#"><img src="./src/image/facebook.png" alt="facebook" /></a>
-        <a href="#"><img src="./src/image/gorjeo.png" alt="twiter" /></a>
-        <a href="#"><img src="./src/image/linkedin.png" alt="linkedin" /></a>
+        <a href="#"><img src="../src/image/instagram.png" alt="instagram" /></a>
+        <a href="#"><img src="../src/image/facebook.png" alt="facebook" /></a>
+        <a href="#"><img src="../src/image/gorjeo.png" alt="twiter" /></a>
+        <a href="#"><img src="../src/image/linkedin.png" alt="linkedin" /></a>
       </div>
       <a href="/"
-        ><img class="itba-img" src="./src/image/itbank.png" alt=""
+        ><img class="itba-img" src="../src/image/itbank.png" alt=""
       /></a>
       <div>
         © 2022 Banco ITBANK S.A. <br />
@@ -294,7 +228,7 @@
                     data-bs-parent="#accordionPersona"
                   >
                     <div class="accordion-body">
-                      <a href="./pages/tarjetas.html">Tarjeta de Crédito</a>
+                      <a href="./tarjetas.html">Tarjeta de Crédito</a>
                       <a href="">Tarjeta de Debito</a>
                     </div>
                   </div>
@@ -319,7 +253,7 @@
                     data-bs-parent="#accordionPersona"
                   >
                     <div class="accordion-body">
-                      <a href="./pages/prestamos.html">Préstamos en efectivo</a>
+                      <a href="">Préstamos en efectivo</a>
                     </div>
                   </div>
                 </li>
@@ -463,7 +397,7 @@
     </div>
 
     <!-- Script -->
-    <script src="app.js"></script>
+    <script src="../app.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
