@@ -424,6 +424,7 @@ img {
   background-color: #f0f0f0;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 .prestamos img {
   width: 300px;
@@ -459,6 +460,21 @@ img {
   -moz-box-shadow: 4px 5px 28px -2px rgba(0, 0, 0, 0.69);
 }
 
+@media (max-width: 768px) {
+  .prestamosMain h1 {
+    width: auto;
+    font-size: 40px;
+    -webkit-text-stroke: 1px #fff;
+  }
+
+  .prestamos-particular {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+  }
+}
 * {
   margin: 0;
   padding: 0;
