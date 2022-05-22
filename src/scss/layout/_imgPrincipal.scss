@@ -1,16 +1,15 @@
-
-.imgPrincipal img{
-   height: 644px;
+.imgPrincipal img {
+  height: 644px;
 }
 
-@media (max-width:768px){
-    .imgPrincipal img{
-        height: 400px;
-    }
+@media (max-width: 768px) {
+  .imgPrincipal img {
+    height: 400px;
+  }
 }
 
-@media (max-width:500px){
-    .imgPrincipal img{
-        height: 200px;
-    }
+@media (max-width: 500px) {
+  .imgPrincipal img {
+    height: 200px;
+  }
 }
