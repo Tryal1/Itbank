@@ -1,0 +1,56 @@
+
+.boton{
+
+    text-align: left;
+    width: 85%;
+    height: 30px;
+    margin: 3px;
+    box-shadow:2px 2px 2px rgb(161, 149, 149);
+
+
+}
+
+.boton:hover{
+    background-color: rgb(49, 190, 245);
+    color: aliceblue;
+    transition: all .3s;
+
+}
+
+header{
+    font-size: 30px;
+    text-align: center;
+    background-color :rgb(109, 178, 247);
+
+}
+.Cuadro{
+    width: 80%;
+    height: 65px;
+
+}
+.formato{
+    text-align: center;
+    
+}
+
+body{
+    background-repeat: no-repeat;
+    background-size: 100% ;
+
+}
+
+.mensaje{
+    background-color:aquamarine;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #000000;
+    
+}
+.envio{
+    width: 100px;
+    height: 30px;
+    font-size: 20px;
+}
+.dropdown{
+    background-color: #fff;
+}
