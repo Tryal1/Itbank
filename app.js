@@ -14,6 +14,10 @@ let contResultados = document.querySelector("#resultados");
 let total = document.querySelector("#total");
 let aporte = document.querySelector("#aporte");
 
+window.onload = function () {
+  mostrar();
+};
+
 open.addEventListener("click", function (e) {
   e.preventDefault();
   popUpContainer.style.opacity = "1";
@@ -52,15 +56,12 @@ desactivarLateral.addEventListener("click", function () {
   activeLateral.style.visibility = "visible";
 });
 
-
-
 // Calculadora
 const usuarios = [];
 
 boton.addEventListener("click", (e) => {
   e.preventDefault();
   contResultados.innerHTML = "";
-
 
   usuarios.push({
     nombre: inputNombre.value,
@@ -74,8 +75,28 @@ boton.addEventListener("click", (e) => {
   }
   total.innerHTML = `<span class='span-calc'>Total</span>: $${sumaTotal}`;
 
-  aporte.innerHTML = `<span class='span-calc'>Cada uno debe aportar</span>: $${sumaTotal / usuarios.length}`;
-  
+  aporte.innerHTML = `<span class='span-calc'>Cada uno debe aportar</span>: $${
+    sumaTotal / usuarios.length
+  }`;
+
   inputNombre.value = "";
   inputPrecio.value = "";
 });
+
+// 
+
+const data = async () => {
+  const response = await fetch(
+    "https://www.dolarsi.com/api/api.php?type=valoresprincipales"
+  );
+
+  const data = await response.json();
+
+  return data;
+};
+
+const mostrar = async () => {
+  const dataDolar = await data();
+
+  console.log(dataDolar);
+};
