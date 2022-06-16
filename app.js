@@ -14,9 +14,10 @@ let contResultados = document.querySelector("#resultados");
 let total = document.querySelector("#total");
 let aporte = document.querySelector("#aporte");
 
-window.onload = function () {
-  mostrar();
-};
+// Doalr hoy
+let bodyDivisa = document.querySelector("#bodyDivisa");
+let inputDolar = document.querySelector("#inputDolar");
+let inputPeso = document.querySelector("#inputPeso");
 
 open.addEventListener("click", function (e) {
   e.preventDefault();
@@ -59,7 +60,7 @@ desactivarLateral.addEventListener("click", function () {
 // Calculadora
 const usuarios = [];
 
-boton.addEventListener("click", (e) => {
+boton?.addEventListener("click", (e) => {
   e.preventDefault();
   contResultados.innerHTML = "";
 
@@ -83,7 +84,11 @@ boton.addEventListener("click", (e) => {
   inputPrecio.value = "";
 });
 
-// 
+// Dolar hoy
+
+window.onload = function () {
+  mostrar();
+};
 
 const data = async () => {
   const response = await fetch(
@@ -97,6 +102,30 @@ const data = async () => {
 
 const mostrar = async () => {
   const dataDolar = await data();
+  for (const dolar of dataDolar) {
+    let divisa = document.createElement("td");
+    let compra = document.createElement("td");
+    let venta = document.createElement("td");
+    let tr = document.createElement("tr");
 
-  console.log(dataDolar);
+    divisa.innerHTML = dolar.casa.nombre;
+    compra.innerHTML = dolar.casa.compra;
+    venta.innerHTML = dolar.casa.venta;
+
+    tr.appendChild(divisa);
+    tr.appendChild(compra);
+    tr.appendChild(venta);
+
+    bodyDivisa.appendChild(tr);
+  }
 };
+
+inputPeso.addEventListener('change',async()=>{
+  const dataDolar = await data();
+ inputDolar.value = (Number(inputPeso.value) / (Number((dataDolar[0].casa.venta).replace(',','.')) * 1.65))
+})
+
+inputDolar.addEventListener('change',async()=>{
+  const dataDolar = await data();
+  inputPeso.value = (Number(inputDolar.value) * (Number((dataDolar[0].casa.venta).replace(',','.')) * 1.65))
+})
