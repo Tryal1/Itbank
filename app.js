@@ -107,10 +107,12 @@ const mostrar = async () => {
     let compra = document.createElement("td");
     let venta = document.createElement("td");
     let tr = document.createElement("tr");
-
     divisa.innerHTML = dolar.casa.nombre;
     compra.innerHTML = dolar.casa.compra;
     venta.innerHTML = dolar.casa.venta;
+
+    compra.classList.add("table-derecha");
+    venta.classList.add("table-derecha");
 
     tr.appendChild(divisa);
     tr.appendChild(compra);
@@ -120,12 +122,16 @@ const mostrar = async () => {
   }
 };
 
-inputPeso.addEventListener('change',async()=>{
+inputPeso.addEventListener("change", async () => {
   const dataDolar = await data();
- inputDolar.value = (Number(inputPeso.value) / (Number((dataDolar[0].casa.venta).replace(',','.')) * 1.65))
-})
+  inputDolar.value =
+    Number(inputPeso.value) /
+    (Number(dataDolar[0].casa.venta.replace(",", ".")) * 1.65);
+});
 
-inputDolar.addEventListener('change',async()=>{
+inputDolar.addEventListener("change", async () => {
   const dataDolar = await data();
-  inputPeso.value = (Number(inputDolar.value) * (Number((dataDolar[0].casa.venta).replace(',','.')) * 1.65))
-})
+  inputPeso.value =
+    Number(inputDolar.value) *
+    (Number(dataDolar[0].casa.venta.replace(",", ".")) * 1.65);
+});
