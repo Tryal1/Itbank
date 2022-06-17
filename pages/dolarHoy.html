@@ -49,35 +49,36 @@
         </nav>
       </div>
     </header>
-
+<div class="container-table">
     <table class="styled-table">
       <thead>
         <tr>
           <th></th>
-          <th>Compra</th>
-          <th>Venta</th>
+          <th class="table-derecha">Compra</th>
+          <th class="table-derecha">Venta</th>
         </tr>
       </thead>
       <tbody id="bodyDivisa"></tbody>
     </table>
     
-    <div>
-      <div>
-        <div>
+    <div class="convertContainer">
+      <h2 class="titulo-input">Conversor en tiempo real</h2>
+      <div class="convert">
+        <div class="spanDivisas">
           <span>ARS $</span>
         </div>
-        <input id="inputPeso" type="number" placeholder="0,00" value=""/>
+        <input class="inputDivisas" id="inputPeso" type="number" placeholder="0,00" value=""/>
       </div>
 
-      <div>
-        <div>
+      <div class="convert">
+        <div class="spanDivisas">
           <span>USD $</span>
         </div>
-        <input id="inputDolar" type="number" placeholder="0,00" value=""/>
+        <input class="inputDivisas" id="inputDolar" type="number" placeholder="0,00" value=""/>
       </div>
      
     </div>
-
+</div>
     <footer class="footer">
       <div class="icono">
         <a href="#"><img src="../src/image/instagram.png" alt="instagram" /></a>

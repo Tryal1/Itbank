@@ -116,6 +116,9 @@ const mostrar = async () => {
     tr.appendChild(compra);
     tr.appendChild(venta);
 
+    compra.classList.add("table-derecha");
+    venta.classList.add("table-derecha");
+
     bodyDivisa.appendChild(tr);
   }
 };
