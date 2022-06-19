@@ -768,6 +768,7 @@ td:nth-child(3) {
 .container-table {
   display: grid;
   grid-template-columns: 70% 30%;
+  padding: 35px 0;
 }
 @media (max-width: 768px) {
   .container-table {
